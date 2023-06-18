@@ -1,16 +1,19 @@
 # pytest
 asyncio
 aiohttp
-cachetools
+async-lru
 python-dotenv
 fastapi
 uvicorn[standard]
 
 
 
-
+# -------------- lunes
 #test
 #manejo de errores
+
+# -------------- domingo
 #comentarios del codigo
 #organizar docker
-# cachetools
+#hacer el readme
+#responder header json content type
