@@ -15,5 +15,4 @@ uvicorn[standard]
 # -------------- domingo
 #comentarios del codigo
 #organizar docker
-#hacer el readme
 #responder header json content type
