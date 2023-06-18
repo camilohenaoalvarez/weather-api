@@ -1,5 +1,11 @@
+"""
+    ## CODE FILE INFO:
+    
+    - This file contains all the util generic functions to let data be transformed
+"""
+
 def convert_celcius_to_fahrenheit(celcius: float) -> float:
-    return (celcius * 9/5) + 32
+    return round((celcius * 9/5) + 32, 2)
 
 def convert_wind_direction_deg_to_text(deg: int) -> str:
     return [

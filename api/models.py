@@ -1,6 +1,16 @@
 from typing import Sequence, Mapping
 from abc import ABC
 
+"""
+    ## CODE FILE INFO:
+    
+    Two models - classes were created:
+    - 1. the abstract Location class that represents de entity, just declaring its attributes and types
+    - 2. the WeatherData class that is an inheritation from Location class
+
+    - WeatherData class has the methods and the structure to prepare its instances for the outside format.
+"""
+
 class Location(ABC):
     name: str = None
     country: str = None

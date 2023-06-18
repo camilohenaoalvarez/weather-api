@@ -3,11 +3,20 @@ from datetime import datetime
 from api.models import WeatherData
 from api.services.weather_api import rqeuest_weather
 
+# put alias to long name functions
 from api.utilities import convert_celcius_to_fahrenheit as ccf, \
     convert_wind_direction_deg_to_text as cwd, \
     get_wind_speed_description as gwsd, \
     get_localized_human_time_from_unix as lhtu
 
+
+"""
+    ## CODE FILE INFO:
+
+    In the code below you will find:
+    - Async request for the weather data to https://api.openweathermap.org api sending the city and the country as arguments.
+    - Finally a WeatherData type object is created and loaded with data.
+"""
 
 async def create_instance(city: str, country: str) -> WeatherData:
     try:

@@ -1,6 +1,6 @@
 # weather-api 
 
-Use this api to get weather information for most of the cities around the world
+Use this api project to get weather information for most of the cities around the world
 
 ## Dependencies
 
