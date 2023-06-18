@@ -1,0 +1,16 @@
+# pytest
+asyncio
+aiohttp
+cachetools
+python-dotenv
+fastapi
+uvicorn[standard]
+
+
+
+
+#test
+#manejo de errores
+#comentarios del codigo
+#organizar docker
+# cachetools
