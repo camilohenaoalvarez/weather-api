@@ -10,6 +10,3 @@ uvicorn[standard]
 # -------------- lunes
 #test
 #manejo de errores
-
-# -------------- domingo
-#organizar docker

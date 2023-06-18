@@ -4,7 +4,7 @@ Use this api project to get weather information for most of the cities around th
 
 ## Dependencies
 
-- To run this project you must need to have [Docker]() installed
+- To run this project you must need to have [Docker](https://docs.docker.com/engine/install/) installed
 
 ## Running this project locally
 
@@ -23,7 +23,7 @@ Use this api project to get weather information for most of the cities around th
 - run the following command line:
 
     ```bash
-    put docker commands here -----------------
+    docker build -t weather_api . && docker run -p 8000:8080 -d weather_api
     ```
 
 ## Usage
