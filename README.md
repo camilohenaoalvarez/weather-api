@@ -12,7 +12,7 @@ Use this api project to get weather information for most of the cities around th
 
 - look for the `example.env` file located in the root directory and make the following steps:
 
-    1. Open the file and **put the corresponding values to each environment variables**. You must have received them in yor email.
+    1. Open the file and **put the corresponding values to each environment variables**. You must have received them in your email.
 
     2. Save the file changes and close it
 

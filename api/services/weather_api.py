@@ -25,7 +25,7 @@ async def rqeuest_weather(city_name:str, country:str) -> dict:
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as resp:
             try:
-                print("===> http request made to Open Weather Map")
+                print("=" * 25,"http request made to Open Weather Map", "=" * 25)
 
                 if resp.status == 404:
                     raise Exception('check the paremeters sent in the request')
