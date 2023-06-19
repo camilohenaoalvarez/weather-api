@@ -39,14 +39,14 @@ Use this api project to get weather information for most of the cities around th
 - Once the project is running use the `url` below to build your request:
 
     ```url
-    http://localhost:8080/?city=<city>&country=<iso_2_country_code>
+    http://localhost:8080/weather?city=<city>&country=<iso_2_country_code>
     ```
 
     - `city` is the name of the city, you can put spaces between. example: *Valledupar*
 
     - `iso_2_country_code` is a country code of two characters in lowercase. example: *co*
 
-- Paste the `url` in your client/browser and make the request. Example: `http://localhost:8000/?city=lima&country=pe`
+- Paste the `url` in your client/browser and make the request. Example: `http://localhost:8000/weather?city=lima&country=pe`
 
 
 
