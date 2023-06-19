@@ -57,8 +57,8 @@ def test_not_valid_url():
 
 def test_invalid_city():
     response = httpx.get("http://localhost:8000/weather", params={"city": "lima78", "country":"pe"})
-    assert response.status_code == 422
-    assert response.json() == {"Error ":"please enter a valid city name"}
+    assert response.status_code == 404
+    assert response.json() == {"Error ":"Location not found. Please check the paremeters sent in the request"}
 
 def test_invalid_country():
     response = httpx.get("http://localhost:8000/weather", params={"city": "cali", "country":"col"})

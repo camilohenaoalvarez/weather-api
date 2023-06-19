@@ -39,11 +39,10 @@ app.add_middleware(
 
 @app.get("/weather")
 async def get_weather(
-    city: Annotated[str, Query(regex="^[A-Za-z ]+$")] = ...,
+    city: str = ...,
     country: Annotated[str, Query(min_length=2, max_length=2, regex="^[a-z]+$")] = ...
 ):
     headers = {"Content-Type": "application/json"}
-    
     try:
         weather_object = await create_instance(city, country)
 

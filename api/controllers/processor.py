@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from api.models import WeatherData
-from api.services.weather_api import rqeuest_weather
+from api.services.weather_api import request_weather
 
 # put alias to long name functions
 from api.utilities import convert_celcius_to_fahrenheit as ccf, \
@@ -20,7 +20,7 @@ from api.utilities import convert_celcius_to_fahrenheit as ccf, \
 
 async def create_instance(city: str, country: str) -> WeatherData:
     try:
-        requested_weather_data: dict = await rqeuest_weather(city, country)
+        requested_weather_data: dict = await request_weather(city, country)
     except Exception as err:
         print (f'Open Weather api is not available, please try again later ... <ERR: {err}>')
         raise

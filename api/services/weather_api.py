@@ -1,10 +1,7 @@
 import os
 import aiohttp
 
-from fastapi import HTTPException
-
 from async_lru import alru_cache
-
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -19,7 +16,7 @@ load_dotenv()
 """
 
 @alru_cache(ttl=120)
-async def rqeuest_weather(city_name:str, country:str) -> dict:
+async def request_weather(city_name:str, country:str) -> dict:
     url = f'{os.getenv("OPEN_WEATHER_API_URL")}?q={city_name},{country}&appid={os.getenv("WEATHER_API_KEY")}&units=metric'
 
     async with aiohttp.ClientSession() as session:
