@@ -5,11 +5,4 @@ aiohttp == 3.8.4
 async-lru == 2.0.2
 httpx
 pytest==7.3.2
-pytest-aiohttp
 jsonschema==4.17.3
-
-
-
-# -------------- lunes
-#test
-#manejo de errores
