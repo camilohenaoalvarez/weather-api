@@ -63,7 +63,7 @@ class WeatherData(Location):
         if not self.wind_speed_description or not self.wind_speed or not self.wind_direction_description:
             raise ValueError("wind values must have been defined")
         
-        f'{self.wind_speed_description}, {self.wind_speed} m/s, {self.wind_direction_description}'
+        self.wind = f'{self.wind_speed_description}, {self.wind_speed} m/s, {self.wind_direction_description}'
 
     def set_geo_coordinates(self):
         if not self.celcius_temperature or not self.fahrenheit_temperature:

@@ -20,10 +20,16 @@ Use this api project to get weather information for most of the cities around th
 
 - Open a terminal in the root directory
 
-- run the following command line:
+- Run the following command line:
 
     ```bash
-    docker build -t weather_api . && docker run -p 8000:8080 -d weather_api
+    docker build -t weather_api . && docker run --name weather_api_cont weather_api:latest -p 8000:8080 -d weather_api
+    ```
+
+- To watch the logs you can run the following command line:
+
+    ```bash
+    docker logs -f --tail weather_api_cont
     ```
 
 ## Usage
