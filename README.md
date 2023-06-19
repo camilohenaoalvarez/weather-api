@@ -23,7 +23,7 @@ Use this api project to get weather information for most of the cities around th
 - Run the following command line:
 
     ```bash
-    docker build -t weather_api . && docker run --name weather_api_cont weather_api:latest -p 8000:8080 -d weather_api
+    docker build -t weather_api . && docker run --name weather_api_cont -p 8000:8080 -d weather_api:latest
     ```
 
 - To watch the logs you can run the following command line:

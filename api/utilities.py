@@ -28,6 +28,8 @@ def convert_wind_direction_deg_to_text(deg: int) -> str:
     ][round(deg/22.5)%16]
 
 def get_wind_speed_description(speed: float) -> str:
+    speed = round(speed, 1)
+    
     if speed >= 0 and speed <= 0.2:
         return 'calm'
     elif speed > 0.3 and speed <= 1.5:
