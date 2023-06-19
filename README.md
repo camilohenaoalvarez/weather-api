@@ -26,10 +26,10 @@ Use this api project to get weather information for most of the cities around th
     docker build -t weather_api . && docker run --name weather_api_cont -p 8000:8080 -d weather_api:latest
     ```
 
-- To watch the logs you can run the following command line:
+- To watch logs you can run the following command line:
 
     ```bash
-    docker logs -f --tail weather_api_cont
+    docker logs -f --tail all weather_api_cont
     ```
 
 ## Usage
