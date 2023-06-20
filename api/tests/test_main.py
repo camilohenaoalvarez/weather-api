@@ -46,23 +46,23 @@ def json_schema_validation(obj, schema):
 
 
 # def test_get_weather_with_valid_params():
-#     response = httpx.get("http://localhost:8000/weather", params={"city": "cali", "country":"co"})
+#     response = httpx.get("http://127.0.0.1:8000/weather", params={"city": "cali", "country":"co"})
 #     assert response.status_code == 200
 #     assert json_schema_validation(response.json(), ok_response_schema)
 
 
 # def test_get_weather_with_invalid_params():
-#     response = httpx.get("http://localhost:8000/weather", params={"city": "cali", "country":"nl"})
+#     response = httpx.get("http://127.0.0.1:8000/weather", params={"city": "cali", "country":"nl"})
 #     assert response.status_code == 404
 #     assert response.json() == {"Error ":"Location not found. Please check the paremeters sent in the request"}
 
 # def test_not_valid_url():
-#     response = httpx.get("http://localhost:8000", params={"city": "cali", "country":"co"})
+#     response = httpx.get("http://127.0.0.1:8000", params={"city": "cali", "country":"co"})
 #     assert response.status_code == 404
 #     assert response.json() == {"detail":"Not Found"}
 
 # def test_invalid_city():
-#     response = httpx.get("http://localhost:8000/weather", params={"city": "lima78", "country":"pe"})
+#     response = httpx.get("http://127.0.0.1:8000/weather", params={"city": "lima78", "country":"pe"})
 #     assert response.status_code == 404
 #     assert response.json() == {"Error ":"Location not found. Please check the paremeters sent in the request"}
 
