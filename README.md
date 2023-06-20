@@ -39,7 +39,7 @@ Use this api project to get weather information for most of the cities around th
 - Once the project is running use the `url` below to build your request:
 
     ```url
-    http://127.0.0.1:8080/weather?city=<city>&country=<iso_2_country_code>
+    http://127.0.0.1:8000/weather?city=<city>&country=<iso_2_country_code>
     ```
 
     - `city` is the name of the city, you can put spaces between. example: *Valledupar*
